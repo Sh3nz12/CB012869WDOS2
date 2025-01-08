@@ -1,0 +1,235 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding:0;
+    overflow: hidden;
+    background-color: darkslateblue;
+    font-size:25px;
+    border-radius: 8px;
+}
+li a {
+    display: block;
+    color:white;
+    text-align: center;
+    padding: 14px 30px;
+    text-decoration: none;
+    transition: 0.5s ease-in;
+}
+.header_1 {
+    width: 100%;
+    background-color: rgba(128, 128, 128, 0.418); 
+    padding: 10px 0;
+}
+.flex-container {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 0 20px; 
+}
+.logo1 {
+    width: 80px;
+    height: 80px;
+}
+.head{
+    color: darkslateblue;
+    font-size: 30px; 
+    font-weight: bold; 
+    margin-left: 0px;
+    font-family:  Helvetica, sans-serif;
+}
+.button-container {
+    display: flex;
+    gap: 20px; 
+}
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: darkslateblue;
+    color: darkpurple; 
+    border-radius: 25px; 
+    padding: 12px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    text-decoration: none; 
+}
+.button a {
+    color: white; 
+    text-decoration: none;  
+}
+.button:hover {
+    background-color: #bba6f4;
+    transform: scale(1.05);
+    color: white;  
+}
+.button:hover a {
+    color: darkslateblue; 
+}
+.h2 {
+    font-size: 18px;
+    font-weight: normal;
+    margin: 0;
+    text-align: center;
+    text-decoration: none;
+}
+
+/* Responsive design: Stack elements on small screens */
+@media screen and (max-width: 768px) {
+    .flex-container {
+        flex-direction: column; /* Stack logo, title, and buttons vertically */
+        align-items: center; /* Center align the content */
+    }
+
+    .button-container {
+        flex-direction: column; /* Stack the buttons vertically */
+        gap: 10px;
+        margin-top: 20px;
+    }
+
+    .logo1 {
+        width: 60px; /* Smaller logo on smaller screens */
+        height: 60px;
+    }
+
+    h1 {
+        font-size: 24px; /* Adjust title font size */
+    }
+}
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px; 
+    padding: 20px; 
+}
+.pic1, .pic2 {
+    height: 300px; 
+    width: auto;
+    border-radius: 10px;
+}
+.text-container {
+    flex: 1; 
+    padding: 0 20px; 
+}
+/* .p1 {
+    font-size: 20px; 
+    font-weight: bold;
+    color: #2c3e50; 
+    text-align: center; 
+    margin-bottom: 10px; 
+}
+.p2 {
+    font-size: 16px;
+    line-height: 1.6; 
+    color: #34495e; 
+    text-align: center; 
+    max-width: 700px; 
+    margin: 0 auto; 
+} */
+
+/* Media Query for smaller screens (responsive layout) */
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .pic1, .pic2 {
+        height: 250px; 
+    }
+
+    .text-container {
+        padding: 0 10px; 
+    }
+}
+.p1{
+    /* margin-left: 3px; */
+    color: darkslateblue;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+.p2{
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+}
+.flex-container1 {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between; 
+  }
+  .flex-container1 ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .flex-container1 li {
+    list-style: none; 
+    width: 20%; 
+    box-sizing: border-box; 
+    padding: 5px;
+  }
+  .flex-container1 a {
+    text-decoration: none; 
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  .flex-container1 a:hover {
+    background-color: #DDD5F3; 
+    color: darkslateblue; 
+  }
+.footer {
+    background-color: rgba(128, 128, 128, 0.418); 
+    padding: 20px;
+    text-align: center; 
+    margin-top: 10px;
+}
+.footer-logo {
+    margin-bottom: 15px;
+}
+.footer-logo-img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+.footer-logo p {
+    font-size: 24px;
+    font-weight: bold;
+    color: darkslateblue;
+}
+.footer-contact p {
+    font-size: 18px;
+    margin: 5px 0;
+    color: darkslateblue;
+}
+.footer-social a {
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 18px;
+    color: darkslateblue;
+}
+.footer-social a:hover {
+    text-decoration: underline;
+}
+
+/* Responsiveness for smaller screens */
+@media (max-width: 600px) {
+    .footer {
+        padding: 15px;
+    }
+
+    .footer-logo img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .footer-logo p, .footer-contact p, .footer-social a {
+        font-size: 12px;
+    }
+
+    .footer-social a {
+        margin: 0 5px;
+    }
+}

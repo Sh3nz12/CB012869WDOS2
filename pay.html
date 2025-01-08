@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediCare Pharmacy</title>
+    <link rel="stylesheet" href="pay.css">
+    <script src="paynow.js" defer></script>
+</head>
+<body id="body1">
+    <header class="header_1">
+        <div class="flex-container">
+            <img class="logo1" src="cross.png" alt="Logo">
+            <h1 class="head">MEDICARE PHARMACY</h1>
+            <div class="button-container">
+                <div class="button">
+                    <a href="buy.html">   
+                        <h2 class="h2">Buy Now</h2>
+                    </a>     
+                </div>
+                <div class="button">
+                    <a href="index.html">
+                        <h2 class="h2">Home</h2>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <br>
+    <h1><center>PERSONAL DETAILS</center></h1>
+    <br>
+    <section>
+        <div class="grid-container">
+            <form class="form-container1" id="form-container1">
+                <legend class="l1">Order Details</legend>
+                <div class="full-width">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your Name">
+                </div>
+                <div class="full-width">
+                    <label for="address">Address:</label>
+                    <input type="text" id="address" name="address" placeholder="Enter your Address">
+                </div>
+                <div>
+                    <label for="contact">Contact Number:</label>
+                    <input type="tel" id="contact" name="contact" placeholder="Enter your Contact Number">               
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your Email">
+                </div>
+                <div>
+                    <label for="delivery date">Delivery Date:</label>
+                    <input type="date" id="delivery-date" name="delivery-date" required>
+                </div>
+                <div>
+                    <label for="delivery-method">Delivery Method:</label>
+                    <select id="delivery-method" name="delivery-method" required>
+                        <option value="pick-up">Pick Up</option>
+                        <option value="delivery">Delivery</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="time-slot">Preferred Delivery Time Slot:</label>
+                    <select id="time-slot" name="time-slot">
+                        <option value="morning">Morning (8 AM - 12 PM)</option>
+                        <option value="afternoon">Afternoon (12 PM - 4 PM)</option>
+                        <option value="evening">Evening (4 PM - 8 PM)</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="payment=method">Payment:</label>
+                    <select id="payment-method" name="payment-method">
+                        <option value="cash">Cash</option>
+                        <option value="card">Card</option>
+                    </select>
+                </div>
+                <div class="full-width">
+                    <div class="button">
+                        <button type="clear">Clear</button>
+                        <button id="submitPaymentBtn">Pay</button>
+                    </div>
+                </div>
+            </form> 
+        </div>
+    </section>
+
+    <!-- Thank You Popup -->
+    <div id="overlay"></div>
+    <div id="thankYouPopup">
+        <p>Thank you for placing this order. Hope you have a nice day!</p>
+        <button id="closePopup">Close</button>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-logo">
+            <img src="cross.png" alt="Logo" class="footer-logo-img">
+            <p>MedicCare Pharmacy</p>
+        </div>
+        <div class="footer-contact">
+            <p>Email: support@medicarepharmacy.com</p>
+            <p>Phone: +123 456 7890</p>
+        </div>
+        <div class="footer-social">
+            <a href="https://facebook.com/medicarepharmacy" target="_blank">Facebook</a>
+            <a href="https://instagram.com/medicarepharmacy" target="_blank">Instagram</a>
+        </div>
+    </footer>
+</body>
+</html>

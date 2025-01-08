@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediCare Pharmacy</title>
+    <link rel="stylesheet" href="buy.css">
+    <script src="main.js" defer></script>
+</head>
+<body id="body1">
+    <header class="header_1">
+        <div class="flex-container">
+            <img class="logo1" src="cross.png" alt="Logo">
+            <h1 class="head">MEDICARE PHARMACY</h1>
+            <div class="button-container">
+                <div class="button">
+                    <a href="index.html">
+                        <h2 class="h2">Home</h2>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <br>
+    <h1><center>Order Now!</center></h1>
+    <br>
+    <section class="categories">
+        <fieldset class="category1">
+            <legend class="l1">Analgsics</legend>
+            <div class="form-container">
+                <label for="coslbl" class="l2">Analgsics : </label><br><br>
+                <select name="coslbl" id="dropdown">
+                    <option value="">Panadol - Rs.502.00</option>
+                    <option value="">Ibuprofen - Rs.120.00</option>
+                    <option value="">Aspirin - Rs.970.00</option>
+                    <option value="">Codeine - Rs.570.00</option>
+                    <option value="">Naproxen - Rs.1520.00</option>
+                    <option value="">Diclofenac - Rs.875.00</option>
+                </div>
+            </select><br><br>
+            <span class="form-container">
+                <label for="quality" class="qualitylbl">Quantity : </label>
+                <input type="number" min="0" placeholder="0" id="qualityinput">
+            </span>
+            <br><br>
+            <label for="currentPrice"class="currentPrice">Current Price(LKR) : </label>
+            <input type="number" min="0" readonly value="0" id="currentPriceinput">
+            <br><br>
+            <div class="button-container">
+                <button id="clearBtn">Clear</button>
+                <button id="addtocartbtn">Add to Cart</button>
+            </div>
+        </fieldset><br><br><br>
+        <fieldset class="category1">
+            <legend class="l1">Antibiotics</legend>
+            <div class="form-container" id="form-container1">
+                <label for="coslbl" class="l2">Antibiotics : </label>
+                <select name="coslbl" id="">
+                    <option value="">Penicillin - Rs.1300.00</option>
+                    <option value="">Amoxicillin - Rs.1320.00</option>
+                    <option value="">Erythromycin - Rs.1200.00</option>
+                    <option value="">Cephalexin - Rs.2800.00</option>
+                    <option value="">Tetracycline - Rs.1200.00</option>
+                    <option value="">Bactrim - Rs.1150.00</option>
+            </div>
+            </select><br> <br>
+            <label for="quality" class="l2">Quantity : </label>
+            <input type="number" min="0" placeholder="0" id="qualityinput" >
+            <br><br>
+            <label for="currentPrice" class="currentPrice" class="l2">Current Price(LKR) : </label>
+            <input type="number" min="0" readonly value="0"  id="currentPriceinput">
+            <br><br>
+            <div class="button-container">
+                <button id="clearBtn">Clear</button>
+                <button id="addtocartbtn">Add to Cart</button>
+            </div>
+        </fieldset><br><br><br>
+        <fieldset class="category1">
+            <legend class="l1">Antidepressants</legend>
+            <div class="form-container" id="form-container1">
+                <label for="coslbl" class="l2">Antidepressants : </label>
+                <select name="coslbl" id="">
+                    <option value="">Fluoxetine - Rs.690.00</option>
+                    <option value="">Setraline - Rs.300.00</option>
+                    <option value="">Citalopram - Rs.2300.00</option>
+                    <option value="">Duloxetine - Rs.2500.00</option>
+                    <option value="">Bupropion - Rs.3200.00</option>
+                    <option value="">Amitriptyline - Rs.400.00</option>
+            </div>
+            </select><br> <br>
+            <label for="quality" class="l2">Quantity : </label>
+            <input type="number" min="0" placeholder="0" id="qualityinput" >
+            <br><br>
+            <label for="currentPrice" class="l2" class="currentPrice">Current Price(LKR) : </label>
+            <input type="number" min="0" readonly value="0" id="currentPriceinput">
+            <br><br>
+            <div class="button-container">
+                <button id="clearBtn">Clear</button>
+                <button id="addtocartbtn">Add to Cart</button>
+            </div>
+        </fieldset><br><br><br>
+        <fieldset class="category1">
+            <legend class="l1">Antihistamines</legend>
+            <div class="form-container" id="form-container1">
+                <label for="coslbl" class="l2">Antihistamines : </label>
+                <select name="coslbl" id="">
+                    <option value="">Diphenhydramine - Rs.6000.00</option>
+                    <option value="">Loratadine - Rs.800.00</option>
+                    <option value="">Cetirizine - Rs.550.00</option>
+                    <option value="">Duloxetine - Rs.1750.00</option>
+                    <option value="">Chlorpheniramine - Rs.540.00</option>
+                    <option value="">Desloratadine - Rs.630.00</option>
+            </div>
+            </select><br> <br>
+            <label for="quality" class="l2">Quantity : </label>
+            <input type="number" min="0" placeholder="0" id="qualityinput" >
+            <br><br>
+            <label for="currentPrice" class="l2" class="currentPrice">Current Price(LKR) : </label>
+            <input type="number" min="0" readonly value="0" id="currentPriceinput">
+            <br><br>
+            <div class="button-container">
+                <button id="clearBtn">Clear</button>
+                <button id="addtocartbtn">Add to Cart</button>
+            </div>
+        </fieldset><br><br><br>
+        <fieldset class="category1">
+            <legend class="l1">Antihypertensives</legend>
+            <div class="form-container" id="form-container1">
+                <label for="coslbl" class="l2">Antihypertensives : </label>
+                <select name="coslbl" id="">
+                    <option value="">Lisinopril - Rs.720.00</option>
+                    <option value="">Amlodipine - Rs.620.00</option>
+                    <option value="">Losartan - Rs.1300.00</option>
+                    <option value="">Hydrochlorothiazide - Rs.850.00</option>
+                    <option value="">Metoprolol - Rs.900.00</option>
+                    <option value="">Clonidine - Rs.450.00</option>
+            </div>
+            </select><br> <br>
+            <label for="quality" class="l2">Quantity : </label>
+            <input type="number" min="0" placeholder="0" id="qualityinput" >
+            <br><br>
+            <label for="currentPrice" class="l2" class="currentPrice">Current Price(LKR) : </label>
+            <input type="number" min="0" readonly value="0" id="currentPriceinput">
+            <div class="button-container">
+                <button id="clearBtn">Clear</button>
+                <button id="addtocartbtn">Add to Cart</button>
+            </div>
+        </fieldset><br><br><br>
+    </section>
+    <center><h1>Order Summary</h1></center>
+    <table id="order-summary">
+        <thead>
+            <tr>
+                <th>Product Name</th>
+                <th>Quantity</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table><br><br><br><br><br><br>
+    <center>
+        <button class="btn1" id="displayTotalBtn">Display Total</button>
+        <button class="btn1" id="addToFavouritesBtn">Add to Favourites</button>
+        <button class="btn1" id="applyFavouritesBtn">Apply Favourites</button>
+        <button class="btn1" id="clearCartBtn">Clear Cart</button>
+    </center>
+    <center>
+        <p class="tot" id="totalPrice">Total Price: 0 LKR</p>
+        <a class="btn2" id="paynowBtn" href="pay.html">Pay Now</a>
+    </center>
+    <br><br>
+<footer class="footer">
+    <div class="footer-logo">
+        <img src="cross.png" alt="Logo" class="footer-logo-img">
+        <p>MedicCare Pharmacy</p>
+    </div>
+    <div class="footer-contact">
+        <p>Email: support@medicarepharmacy.com</p>
+        <p>Phone: +123 456 7890</p>
+    </div>
+    <div class="footer-social">
+        <a href="https://facebook.com/medicarepharmacy" target="_blank">Facebook</a>
+        <a href="https://instagram.com/medicarepharmacy" target="_blank">Instagram</a>
+    </div>
+</footer>
+</html>
